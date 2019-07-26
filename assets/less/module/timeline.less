@@ -1,0 +1,197 @@
+
+/*------------------------------------*\
+    #Timeline
+\*------------------------------------*/
+.timeline-tab {
+	text-align: center
+}
+
+.timeline-tab .nav-tabs {
+	border-bottom: none
+}
+
+.timeline-tab .tab-content p {
+color: @color-body;
+font-family: @font-body;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	margin-bottom: 0
+}
+
+.timeline-tab .nav-tabs {
+	margin-bottom: 75px;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+ border:2px solid @color-theme;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.timeline-tab .nav-tabs>li {
+	text-align: center;
+	float: none;
+	display: inline-block;
+	line-height: 43px;
+	width: 120px;
+	height: 43px;
+	margin-bottom: 0
+}
+
+.timeline-tab .nav-tabs>li:last-child {
+	margin-left: -3px;
+}
+
+.timeline-tab .nav-tabs>li>a {
+	border: none;
+	border-radius: 0;
+	padding: 0;
+font-family: @font-body;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 43px;
+	text-transform: uppercase;
+}
+
+.timeline-tab .nav-tabs>li>a {
+	background-color: transparent;
+	border: none;
+ color: @color-theme;
+	margin-right: 0
+}
+
+.timeline-tab .nav-tabs>li>a:focus,
+.timeline-tab .nav-tabs>li>a:hover,
+.timeline-tab .nav-tabs>li.active>a,
+.timeline-tab .nav-tabs>li.active>a:focus,
+.timeline-tab .nav-tabs>li.active>a:hover {
+	background-color: #2c3e50;
+	background-image: linear-gradient(to right, #e74c3c 0%, #9b59b6 100%);
+	border: none;
+ color:@color-white;
+}
+
+.timeline-content {
+	list-style: none;
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.timeline-content:before {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	content: " ";
+	width: 3px;
+	background-color: #e0e0e0;
+	left: 50%;
+	margin-left: -1.5px;
+}
+
+.timeline-content .row {
+	margin-bottom: 55px;
+	position: relative;
+	text-align: right
+}
+
+.timeline-content .row:last-of-type {
+	margin-bottom: 0
+}
+
+.timeline-content .row-interval {
+	text-align: left
+}
+
+.timeline-content .row .col-md-6 {
+	padding-right: 35px;
+	position: relative;
+}
+
+.timeline-content .row-interval .col-md-6 {
+	padding-left: 35px;
+	padding-right: 0;
+}
+
+.timeline-content .row .col-md-6 .timeline-panel:before {
+	position: absolute;
+	content: "";
+	top: 50%;
+	right: 0;
+	width: 16px;
+	height: 16px;
+ background-color:@color-white;
+border: 3px solid @color-theme;
+	border-radius: 50%;
+	margin-top: -8px;
+	margin-right: -8px;
+}
+
+.timeline-content .row-interval .col-md-6 .timeline-panel:before {
+	left: 0;
+	right: auto;
+	margin-left: -8px;
+	margin-right: auto
+}
+
+.timeline-content .event {
+ color: @color-heading;
+ font-family: @font-heading;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 22px;
+	margin-bottom: 9px
+}
+
+.timeline-content .date {
+ color:@color-body;
+ font-family: @font-body;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.timeline-panel:hover::before {
+background-color:@color-theme !important;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+.timeline-content:before {
+	left: 0;
+}
+
+.timeline-content .row .col-md-6 .timeline-panel:before {
+	right: auto;
+	left: 8px;
+}
+
+.timeline-content .row-interval .col-md-6 .timeline-panel:before {
+	left: 16px;
+}
+
+.timeline-content .row {
+	text-align: left
+}
+
+.timeline-content .row .col-md-6 {
+	padding-right: 0;
+	padding-left: 35px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 481px) and (max-width : 1200px) {
+
+.timeline-content .row .col-md-offset-6 {
+	margin-left: 50%
+}
+
+.timeline-content .row .col-md-6,
+ .timeline-content .row-interval .col-md-6 {
+	width: 50%;
+}
+}

@@ -1,0 +1,262 @@
+/*------------------------------------*\
+    #Header
+\*------------------------------------*/
+.header-onepage {
+	background-color: transparent;
+	height: 94px;
+}
+
+.header-onepage + section {
+	margin-top: -94px; /*padding-top:210px;*/
+}
+
+.header-onepage .navbar {
+	background-color: transparent;
+	height: 94px;
+}
+
+.navbar {
+	margin-bottom: 0
+}
+
+.navbar.affix {
+	background-color: rgba(0,0,0,0.7);
+	padding-top: 0
+}
+
+.navbar .logo {
+	height: 94px;
+	line-height: 94px;
+}
+
+.navbar-nav {
+	margin-right: 0
+}
+
+.navbar-nav >li {
+	margin-right: 38px;
+	height: 94px;
+}
+
+.navbar-nav li a {
+	font-size: 16px;
+ font-family:@font-heading;
+	text-transform: capitalize;
+	font-weight: 400;
+}
+
+.navbar-nav >li >a {
+ color:@color-white;
+	line-height: 94px;
+	padding: 0;
+	letter-spacing:1px;
+	position:relative;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li.active > a {
+	background-color: transparent;
+}
+
+.affix .navbar-nav > li > a:hover,
+.affix .navbar-nav > li > a:focus,
+.affix .navbar-nav > li.active > a {
+	background-color: transparent;
+	font-weight:700;
+	color:@color-theme;
+}
+.header-onepage .navbar-nav > li:last-child {
+	margin-right: 0;
+}
+
+/* Navbar Dark */
+.style-2.affix {
+	background-color: rgba(255,255,255,0.9);
+	padding-top: 0
+}
+.style-2 .navbar-nav >li >a { color:@color-heading}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+
+.navbar-nav {
+	margin: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggle {
+ border-color:@color-white;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin-top: 35px;
+}
+
+.navbar-toggle .icon-bar {
+ background-color:@color-white
+}
+.style-2 .navbar-toggle {
+ border-color:@color-heading;
+}
+.style-2 .navbar-toggle .icon-bar {
+ background-color:@color-heading;
+}
+.style-2 .navbar-nav > li > a { color:@color-white}
+.container > .navbar-header {
+	margin-left: 0
+}
+
+.container > .navbar-collapse {
+	width: 100%;
+ background-color:@color-heading;
+	margin-right: 0
+}
+
+.navbar-nav > li {
+	height: auto !important;
+	margin-right: 0
+}
+
+.navbar-nav > li.pull-left {
+	float: none !important
+}
+
+.navbar-nav > li > a {
+	line-height: 36px;
+ color:@color-white;
+	padding-right: 0;
+	padding-left: 0
+}
+
+
+.navbar-nav > li.active {
+	border-bottom: none
+}
+
+li.open a,
+li.open a:hover,
+li.open a:focus {
+color:@color-white;
+	line-height: 21px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: transparent
+}
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.navbar-header {
+	float: none !important;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center
+}
+
+.navbar-toggle {
+ border-color:@color-white;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin-top: 35px;
+	display: block;
+	float: left;
+}
+
+.navbar-toggle .icon-bar {
+ background-color:@color-white
+}
+.style-2 .navbar-toggle {
+ border-color:@color-heading;
+}
+.style-2 .navbar-toggle .icon-bar {
+ background-color:@color-heading;
+}
+
+.style-2 .navbar-nav > li > a { color:@color-white}
+.navbar-fixed-top .navbar-collapse {
+	overflow: scroll !important;
+}
+
+.navbar-collapse.collapse {
+	display: none!important;
+}
+
+.collapse.in {
+	display: block !important;
+}
+
+.navbar-nav {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.navbar-nav>li {
+	float: none;
+}
+
+.container > .navbar-collapse {
+	width: 100%;
+ background-color:@color-heading;
+	margin-right: 0
+}
+
+.navbar-nav > li {
+	height: auto !important;
+	margin-right: 0
+}
+
+.affix .navbar-nav > li {
+	height: auto !important;
+}
+
+.navbar-nav > li.pull-left {
+	float: none !important
+}
+
+.navbar-nav > li > a {
+	line-height: 36px !important;
+ color:@color-white !important;
+	padding-right: 0;
+	padding-left: 0
+}
+
+.navbar-nav > li:after {
+	display: none
+}
+
+.navbar-nav > li.active {
+	border-bottom: none
+}
+li a:hover,
+li.open > a:focus{
+color:@color-white
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: transparent
+}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 992px) and (max-width : 1200px) {
+
+.navbar-nav > li {
+	margin-right: 16px
+}
+
+}

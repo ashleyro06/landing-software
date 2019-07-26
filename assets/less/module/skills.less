@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    #Skills
+\*------------------------------------*/
+.skills { padding-bottom:50px;}
+.skills .progressbar {
+	margin-bottom: 50px;
+	width: 500px;
+}
+
+.skills .progress {
+	
+height: 9px;
+background-color: #f2f2f2;
+	-moz-border-radius: 9px;
+	-webkit-border-radius:  9px;
+	border-radius:  9px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.skills .progress-bar {
+background-color: #3dae60;
+background-image: linear-gradient(to right, #e74c3c 0%, #9b59b6 100%);
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.skills .progress-title {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-bottom:24px;
+	line-height:1;
+}
+
+.skills .progress-title .title {
+	color: @color-heading;
+	font-family:@font-heading;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.skills .progress-title .value {
+	float: right;
+	color: @color-heading;
+	font-family:@font-heading;
+	font-size: 18px;
+	font-weight: 300;
+}
+.skills-2 .heading { margin-bottom:0}
+.skills-2 .heading h2 { font-size:24px; margin-bottom:29px;}
+.skills-2 .heading p { font-size:20px; line-height:32px;}
+.skills-2 .heading p:first-of-type{ margin-bottom:36px;}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+.skills .progressbar { width:100%;}
+}

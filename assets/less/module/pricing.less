@@ -1,0 +1,170 @@
+
+/*------------------------------------*\
+    #PRICING-SECTION
+\*------------------------------------*/
+.pricing .price-table {
+ .transition(0.6s, linear);
+}
+
+.pricing .price-table .panel {
+	padding: 50px;
+	background-color: transparent;
+	margin-bottom: 0;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.pricing .price-table .panel-heading {
+	border-bottom: 1px solid #f2f2f2;
+	padding: 0;
+}
+
+.pricing .price-table .panel-heading h4 {
+	font-family: Lato;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 40px
+}
+
+.pricing .price-table .panel-heading p {
+font-family: @font-body;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 80px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
+.pricing .price-table .panel-heading p span {
+	font-size: 18px;
+	line-height: 36px;
+	vertical-align: top;
+}
+
+.pricing .price-table .panel-body {
+	padding: 30px 0 0 0;
+}
+
+.pricing .price-table .panel-body p {
+color:@color-body;
+font-family:@font-body;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 27px;
+	margin-bottom: 50px
+}
+
+/* Pricing #1 */
+
+.pricing-1 .price-table .panel-heading h4,
+.pricing-1 .price-table .panel-heading p {
+ color: @color-heading;
+}
+
+.pricing-1 .price-table .panel-body .btn {
+	background-color: #2c3e50;
+	border-color: #2c3e50;
+	color: #fff;
+}
+
+/* Pricing #1 Hover & Active */
+.pricing-1 .price-table.active .panel {
+ background-color: @color-dark;
+}
+
+.pricing-1 .price-table.active .panel-heading {
+	border-bottom-color: rgba(255,255,255,.4);
+}
+
+.pricing-1 .price-table.active .panel-heading h4,
+.pricing-1 .price-table.active .panel-heading p{
+ color: @color-white;
+}
+
+.pricing-1 .price-table.active .panel-body .btn {
+	background-color: transparent;
+ border-color: @color-white;
+	color: #fff;
+}
+
+.pricing-1 .price-table.active .panel-body .btn:hover
+ {
+background-color:@color-white;
+	background-image: none;
+color:@color-dark
+}
+.pricing-1 .price-table .panel-body .btn:hover{background-color:@color-dark;background-image: none;}
+/* Pricing #2 */
+
+.pricing-2 .price-table .panel-heading h4 {
+ color: @color-heading;
+}
+
+.pricing-2 .price-table .panel-heading p {
+ color: @color-theme;
+	background: -webkit-linear-gradient(#e74c3c 0%, #9b59b6 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.pricing-2 .price-table .panel-body .btn {
+	background-color: transparent;
+	background-image: none;
+ border: 1px solid @color-theme !important;
+ color: @color-theme;
+}
+
+.pricing-2 .price-table .panel-heading {
+	border-bottom-color: #f2f2f2;
+}
+
+/* Pricing #2 Hover & Active */
+.pricing-2 .price-table.active .panel{
+ background-color: @color-white;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.03);
+}
+
+.pricing-2 .price-table.active .panel-body .btn,
+.pricing-2 .price-table:hover .panel-body .btn {
+	background-image: linear-gradient(to right, #e74c3c 0%, #9b59b6 100%);
+	border-color: transparent !important;
+	color: #fff !important;
+}
+
+.pricing-2 .price-table.active .panel-body .btn:hover,
+.pricing-2 .price-table:hover .panel-body .btn:hover {
+background-color:@color-white;
+	background-image: none;
+color:@color-dark
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+
+.pricing-1 .price-table:first-of-type,
+.pricing-2 .price-table {
+	margin-bottom: 25px;
+}
+
+.pricing-2 .price-table:last-of-type {
+	margin-bottom: 0
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.pricing-2 .price-table .panel {
+	padding: 10px;
+}
+
+.pricing-2 .price-table .panel .btn {
+	width: 170px;
+}
+}

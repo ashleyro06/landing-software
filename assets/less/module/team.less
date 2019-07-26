@@ -1,0 +1,215 @@
+
+/*------------------------------------*\
+    #Team
+\*------------------------------------*/
+.team .heading {
+	margin-bottom: 80px;
+}
+
+.team .heading h2 {
+	color: #2c3e50;
+	font-family: Comfortaa;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 32px;
+	text-transform: uppercase;
+	margin-bottom: 40px
+}
+
+.team .heading p {
+	color: #999;
+	font-family: Comfortaa;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 0
+}
+
+/* Team #1 */
+.team-1 {
+	padding-bottom: 0
+}
+
+.team-1 .teams {
+	position: relative
+}
+
+.team-1 img {
+	display: inline-block;
+	position: relative
+}
+
+.team-1 .img-1,
+.team-1 .img-3 {
+	max-width: 360px;
+	margin-bottom: -50px;
+}
+
+.team-1 .img-2 {
+	max-width: 400px;
+	z-index: 3
+}
+
+.team-1 .img-1 {
+	margin-right: -80px
+}
+
+.team-1 .img-3 {
+	margin-left: -80px;
+}
+
+/* Team #2 */
+.team-2 {
+	padding-bottom: 40px;
+}
+
+.team-2 .team-member {
+	position: relative;
+	margin-bottom: 60px
+}
+
+.team-2 .team-member .member-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.team-2 .team-member .member-info {
+	padding-left: 150px;
+}
+
+.team-2 .team-member .member-info h3 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 14px;
+	padding-top: 26px;
+}
+
+.team-2 .team-member .member-info .member-job {
+color: @color-body;
+font-family: @font-body;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1;
+	margin-bottom: 28px;
+}
+
+.team-2 .team-member .member-info .member-social a {
+	margin-left: 8px;
+color: @color-body;
+font-family: @font-body;
+}
+
+.team-2 .team-member .member-info .member-social a:hover {
+color:@color-dark
+}
+
+.team-2 .team-member .member-info .member-bio {
+color: @color-body;
+font-family: @font-body;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.team-2 .team-member .member-img img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+/* Team #3 */ 
+.team-3 .team-member .member-img {
+	margin-bottom: 30px;
+}
+
+.team-3 .team-member .member-info h3 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 14px;
+}
+
+.team-3 .team-member .member-info .member-job {
+color: @color-body;
+font-family: @font-body;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1;
+	margin-bottom: 17px;
+}
+
+.team-3 .team-member .member-info .member-bio {
+color: @color-body;
+font-family: @font-body;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.team .heading h2 {
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+.team-1 .img-1,
+.team-1 .img-3 {
+	max-width: 130px;
+	margin-bottom: -50px;
+}
+
+.team-1 .img-2 {
+	max-width: 180px;
+}
+
+.team .heading p {
+	font-size: 16px;
+}
+
+.team-3 .team-member {
+	margin-bottom: 25px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+
+.team .heading p {
+	font-size: 18px;
+}
+
+.team-1 .img-1,
+.team-1 .img-3 {
+	max-width: 160px;
+}
+
+.team-1 .img-2 {
+	max-width: 210px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.team-1 .img-1,
+.team-1 .img-1,
+.team-1 .img-3 {
+	max-width: 210px;
+	margin-bottom: -90px;
+}
+
+.team-1 .img-2 {
+	max-width: 300px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}

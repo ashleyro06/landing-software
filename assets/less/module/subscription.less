@@ -1,0 +1,113 @@
+
+/*------------------------------------*\
+    #SUBSCRIPTION
+\*------------------------------------*/
+.sub-1 form {
+	width: 500px;
+	height: 50px;
+	border: 1px solid #bdbdbd;
+	padding: 3px 3px 3px 30px;
+	margin-bottom: 0;
+	border-radius: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.sub-1 form .form-control {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	line-height: 50px;
+	vertical-align: middle;
+	float: left;
+	height: 46px;
+}
+
+.sub-1 form .btn {
+	width: 150px;
+	height: 42px;
+	line-height: 42px;
+	vertical-align: middle;
+	float: right;
+ font-family:@font-body;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #e74c3c;
+	background-image: linear-gradient(to right, #9b59b6 0%, #e74c3c 100%);
+}
+
+.sub-2 form {
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.sub-2 form .form-control {
+	margin-right: 30px;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.sub-1 form {
+	width: auto;
+	height: auto;
+	border: none;
+	padding: 0
+}
+
+.sub-1 form .form-control {
+	margin-bottom: 20px;
+	float: none;
+	border: 1px solid #bdbdbd;
+	width: 100%;
+	padding: 0 25px;
+	text-align: center;
+}
+
+.sub-1 form .btn,
+.sub-2 form .btn {
+	width: 100%;
+	float: none
+}
+
+.sub-2 form .form-control {
+	margin-right: 0;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+
+.sub-1 form {
+	width: 100%;
+}
+
+.sub-1 form .form-control {
+	width: 260px;
+}
+
+.sub-2 form .btn {
+	width: 100%;
+	float: none
+}
+
+.sub-2 form .form-control {
+	margin-right: 0;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.sub-2 form .form-control {
+	margin-right: 0;
+}
+}
